@@ -1,0 +1,193 @@
+body {
+	font-family:sans-serif;
+	padding:2rem;
+}
+
+h1 {
+	font-family:"Summer Storm";
+	font-size:2rem;
+	color:#f08700;
+}
+
+h2 {
+	font-family:"Summer Storm";
+	font-size:1.5rem;
+	color:#efca08;
+}
+
+h3 {
+	font-family:Gravity;
+	font-weight:bold;
+	font-size:1.5rem;
+	color:#aaaaaa;
+}
+
+h4 {
+	font-family:Gravity;
+	font-weight:bold;
+	font-size:1.25rem;
+	margin:1rem 0;
+}
+
+img {
+	max-width:100%;
+}
+
+nav {
+	margin:2rem 0 2rem 0;
+}
+
+section {
+	margin:1rem 0;
+	border-top:1px solid #aaaaaa;
+}
+
+section code {
+	background-color:#eeeeee;
+	padding:0.25em 0;
+	box-decoration-break:clone;
+}
+
+p {
+	font-family:Gravity;
+}
+
+form p {
+	margin:0;
+}
+
+a {
+	text-decoration:none;
+	color:#f08700;
+	transition:color 0.5s;
+	word-wrap:break-word;
+}
+a:hover, a:focus {
+	color:#efca08;
+}
+
+ul, ol {
+	font-family:Gravity;
+}
+li {
+	padding-top:0.25rem;
+}
+
+.main-nav {
+	position:relative;
+	width:100%;
+	margin:0 0 2rem 0;
+	padding:0.75rem 0;
+	text-align:center;
+	background-color:#f08700;
+}
+
+.nav-home {
+	position:absolute;
+	top:1.25rem;
+	left:0.75rem;
+	font-family:"Summer Storm";
+	text-decoration:none;
+	color:white;
+}
+
+.button {
+	display:inline-block;
+	padding:0.75rem;
+	font-family:"Summer Storm";
+	text-decoration:none;
+	background-color:#f08700;
+	color:white;
+}
+
+.form-button {
+	padding:0.5rem;
+	font-family:Gravity;
+	background-color:#eeeeee;
+}
+.form-button:hover, .form-button:focus {
+	outline:none;
+}
+
+.form-text {
+	padding:0.5rem;
+	font-family:Gravity;
+}
+
+.product {
+	margin:auto;
+	width:70%;
+	border-top:1px solid #aaaaaa;
+}
+
+.product-image {
+	float:left;
+	width:40%;
+	padding:1rem 1rem 1rem 0;
+}
+
+.product-content {
+	display:inline-block;
+	width:55%;
+}
+
+.buy-button {
+	margin-top:1.5rem;
+}
+
+@media (max-width:50rem) {
+	.product-image {
+		width:100%;
+		padding:1rem 0 1rem 0;
+	}
+	.product-content {
+		width:100%;
+	}
+}
+
+.background {
+	width:100%;
+	height:100%;
+	background-color:#eeeeee;
+	border:none;
+}
+
+.main-grid {
+	margin:auto;
+	margin-bottom:2rem;
+	width:70%;
+	height:10rem;
+	background-color:#aaaaaa;
+}
+
+.bottom-section {
+	width:100%;
+	height:5rem;
+	background-color:#f08700;
+}
+
+.swatch {
+	display:inline-block;
+	padding:1rem;
+	width:8rem;
+	text-align:center;
+	font-weight:bold;
+}
+.swatch1 {
+	background-color:#f08700;
+}
+.swatch2 {
+	background-color:#efca08;
+}
+.swatch3 {
+	background-color:#aaaaaa;
+}
+.swatch4 {
+	background-color:#eeeeee;
+}
+
+.clear:after {
+	content:'';
+	display:block;
+	clear:both;
+}

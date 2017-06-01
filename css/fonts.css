@@ -1,0 +1,31 @@
+@font-face {
+	font-family:"Summer Storm";
+	src:url(../fonts/KGSummerStormSmooth.ttf);
+	font-style:normal;
+	font-weight:normal;
+}
+
+@font-face {
+	font-family:Gravity;
+	src:url(../fonts/Gravity-Book.otf);
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face {
+	font-family:Gravity;
+	src:url(../fonts/Gravity-BookItalic.otf);
+	font-style:italic;
+	font-weight:normal;
+}
+@font-face {
+	font-family:Gravity;
+	src:url(../fonts/Gravity-Bold.otf);
+	font-style:normal;
+	font-weight:bold;
+}
+@font-face {
+	font-family:Gravity;
+	src:url(../fonts/Gravity-BoldItalic.otf);
+	font-style:italic;
+	font-weight:bold;
+}
