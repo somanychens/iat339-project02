@@ -97,17 +97,21 @@ li {
 	font-family:"Summer Storm";
 	font-size:1.25rem;
 	text-decoration:none;
-	background-color:#f08700;
 	color:white;
+	background-color:#f08700;
 }
 
 .form-button {
 	padding:0.5rem;
 	font-family:Gravity;
-	background-color:#eeeeee;
+	font-weight:bold;
+	color:white;
+	background-color:#f08700;
+	border:none;
+	transition:background-color 0.5s;
 }
 .form-button:hover, .form-button:focus {
-	outline:none;
+	background-color:#efca08;
 }
 
 .form-text {
