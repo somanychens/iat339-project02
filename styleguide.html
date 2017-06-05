@@ -196,7 +196,7 @@
 			<section>
 				<h3>Website grid structure</h3>
 				<h4>CSS selector:</h4>
-				<p>.background, .main-nav, .nav-home, .button, .main-grid, .bottom-section</p>
+				<p>.background, .main-nav, .nav-home, .button, .main-grid, .main-text, .bottom-section</p>
 				<h4>Sample code:</h4>
 				<code>
 					&lt;div class="background"&gt;<br>
@@ -206,10 +206,16 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;News&lt;/a&gt;<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Store&lt;/a&gt;<br>
 					&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;div class="main-grid"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Main content here&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;section class="main-grid"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Section header&lt;/h1&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="main-text"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Content header&lt;/h2&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Main content here!&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;div class="bottom-section"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href=""&gt;About&lt;/a&gt; | &lt;a href=""&gt;FAQ&lt;/a&gt; | &lt;a href=""&gt;Support&lt;/a&gt;&lt;/p&gt;<br>
 					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;div class="bottom-section"&gt;&lt;/div&gt;<br>
 					&lt;/div&gt;
 				</code>
 				<h4>Rendered element:</h4>
@@ -220,10 +226,16 @@
 						<a href="" class="button">News</a>
 						<a href="" class="button">Store</a>
 					</nav>
-					<div class="main-grid">
-						<p>Main content here</p>
+					<section class="main-grid">
+						<h1>Section header</h1>
+						<section class="main-text">
+							<h2>Content header</h2>
+							<p>Main content here!</p>
+						</section>
+					</section>
+					<div class="bottom-section">
+						<p><a href="">About</a> | <a href="">FAQ</a> | <a href="">Support</a></p>
 					</div>
-					<div class="bottom-section"></div>
 				</div>
 			</section>
 			<section>
