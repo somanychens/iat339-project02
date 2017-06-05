@@ -77,14 +77,14 @@ li {
 	position:relative;
 	width:100%;
 	margin:0 0 2rem 0;
-	padding:0.75rem 0;
+	padding:0;
 	text-align:center;
 	background-color:#f08700;
 }
 
 .nav-home {
 	position:absolute;
-	top:1.25rem;
+	top:1rem;
 	left:0.75rem;
 	font-family:"Summer Storm";
 	text-decoration:none;
@@ -95,6 +95,7 @@ li {
 	display:inline-block;
 	padding:0.75rem;
 	font-family:"Summer Storm";
+	font-size:1.25rem;
 	text-decoration:none;
 	background-color:#f08700;
 	color:white;
