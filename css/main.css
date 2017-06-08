@@ -77,14 +77,14 @@ li {
 	position:relative;
 	width:100%;
 	margin:0 0 2rem 0;
-	padding:0.75rem 0;
+	padding:0;
 	text-align:center;
 	background-color:#f08700;
 }
 
 .nav-home {
 	position:absolute;
-	top:1.25rem;
+	top:1rem;
 	left:0.75rem;
 	font-family:"Summer Storm";
 	text-decoration:none;
@@ -95,18 +95,23 @@ li {
 	display:inline-block;
 	padding:0.75rem;
 	font-family:"Summer Storm";
+	font-size:1.25rem;
 	text-decoration:none;
-	background-color:#f08700;
 	color:white;
+	background-color:#f08700;
 }
 
 .form-button {
 	padding:0.5rem;
 	font-family:Gravity;
-	background-color:#eeeeee;
+	font-weight:bold;
+	color:white;
+	background-color:#f08700;
+	border:none;
+	transition:background-color 0.5s;
 }
 .form-button:hover, .form-button:focus {
-	outline:none;
+	background-color:#efca08;
 }
 
 .form-text {
@@ -116,26 +121,26 @@ li {
 
 .product {
 	margin:auto;
-	width:70%;
+	width:60%; /*60% of entire page*/
 	border-top:1px solid #aaaaaa;
 }
 
 .product-image {
 	float:left;
-	width:40%;
+	width:50%; /*50% of .product */
 	padding:1rem 1rem 1rem 0;
 }
 
 .product-content {
 	display:inline-block;
-	width:55%;
+	width:45%; /*45% of .product */
 }
 
 .buy-button {
 	margin-top:0.5rem;
 }
 
-@media (max-width:50rem) {
+@media (max-width:55rem) {
 	.product-image {
 		width:100%;
 		padding:1rem 0 1rem 0;
@@ -155,15 +160,31 @@ li {
 .main-grid {
 	margin:auto;
 	margin-bottom:2rem;
-	width:70%;
-	height:10rem;
-	background-color:#aaaaaa;
+	width:60%;
+	height:100%;
+	border:none;
+}
+
+.main-text {
+	padding:1.5rem;
+	background-color:white;
+	border:none;
 }
 
 .bottom-section {
+	padding:1rem 0;
 	width:100%;
-	height:5rem;
+	text-align:center;
+	color:white;
 	background-color:#f08700;
+}
+
+.bottom-section a {
+	color:white;
+	transition:color 0.5s;
+}
+.bottom-section a:hover, .bottom-section a:focus {
+	color:#efca08;
 }
 
 .swatch {
