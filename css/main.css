@@ -4,9 +4,14 @@ body {
 	padding:0;
 }
 
+h1, h2, h3, h4, p {
+	margin:0;
+	padding:1rem;
+}
+
 h1 {
 	font-family:"Summer Storm";
-	font-size:2rem;
+	font-size:2.5rem;
 	color:#f08700;
 }
 
@@ -27,25 +32,19 @@ h4 {
 	font-family:Gravity;
 	font-weight:bold;
 	font-size:1.25rem;
-	margin:1rem 0;
 }
 
 img {
 	max-width:100%;
+	padding:1rem;
 }
 
 nav {
 	margin:2rem 0 2rem 0;
 }
 
-section {
-	margin:1rem 0;
-	border-top:1px solid #aaaaaa;
-}
-
 section code {
 	background-color:#eeeeee;
-	padding:0.25em 0;
 	box-decoration-break:clone;
 }
 
@@ -121,35 +120,8 @@ li {
 	font-family:Gravity;
 }
 
-.product {
-	margin:auto;
-	width:60%; /*60% of entire page*/
-	border-top:1px solid #aaaaaa;
-}
-
-.product-image {
-	float:left;
-	width:50%; /*50% of .product */
-	padding:1rem 1rem 1rem 0;
-}
-
-.product-content {
-	display:inline-block;
-	width:45%; /*45% of .product */
-}
-
 .buy-button {
-	margin-top:0.5rem;
-}
-
-@media (max-width:55rem) {
-	.product-image {
-		width:100%;
-		padding:1rem 0 1rem 0;
-	}
-	.product-content {
-		width:100%;
-	}
+	margin:0.5rem 1rem;
 }
 
 .background {
@@ -159,18 +131,9 @@ li {
 	border:none;
 }
 
-.main-grid {
-	margin:auto;
+.content {
 	margin-bottom:2rem;
-	width:60%;
-	height:100%;
-	border:none;
-}
-
-.main-text {
-	padding:1.5rem;
 	background-color:white;
-	border:none;
 }
 
 .bottom-section {
@@ -207,10 +170,4 @@ li {
 }
 .swatch4 {
 	background-color:#eeeeee;
-}
-
-.clear:after {
-	content:'';
-	display:block;
-	clear:both;
 }

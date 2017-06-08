@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02: Style Guide</title>
-		<link rel="stylesheet" href="css/main.css">
+		<title>P02: Style Guide</title>		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">		<link rel="stylesheet" href="css/grids.css">
 		<link rel="stylesheet" href="css/fonts.css">
 	</head>
 	<body>
@@ -30,7 +30,7 @@
 			<section>
 				<h3>Navigation button</h3>
 				<h4>CSS selector:</h4>
-				<p>.nav-button</p>
+				<p>.button</p>
 				<h4>Sample code:</h4>
 				<code>&lt;a href="" class="button"&gt;Navigation button&lt;/a&gt;</code>
 				<h4>Rendered element:</h4>
@@ -139,7 +139,7 @@
 			<section>
 				<h3>Main navigation</h3>
 				<h4>CSS selector:</h4>
-				<p>.main-nav, .nav-home, .nav-button</p>
+				<p>.main-nav, .nav-home, .button</p>
 				<h4>Sample code:</h4>
 				<code>
 					&lt;nav class="main-nav"&gt;<br>
@@ -160,42 +160,27 @@
 			<section>
 				<h3>Product listing</h3>
 				<h4>CSS selector:</h4>
-				<p>.product, .clear, .product-image, .product-content, .price, .buy-button</p>
+				<p>.grid-row, .grid-col-2of3, .grid-col-1of2, .buy-button</p>
 				<h4>Sample code:</h4>
 				<code>
-					&lt;div class="product clear"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;img src="images/template-image.jpg" class="product-image" alt="Product image"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;div class="product-content"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Product&lt;/h4&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;$10 CAD&lt;/strong&gt;&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="buy-button"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button buy-button"&gt;Buy&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&lt;/div&gt;
+					&lt;div class="grid-row"&gt;<br>					&nbsp;&nbsp;&nbsp;&lt;div class="grid-col-2of3"&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="grid-col-1of2"&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/template-image.jpg" alt="Product image"&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="grid-col-1of2"&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Product&lt;/h4&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!&lt;/p&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;$10 CAD&lt;/strong&gt;&lt;/p&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="buy-button"&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Buy&lt;/a&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>					&lt;/div&gt;
 				</code>
-				<h4>Rendered element:</h4>
-				<div class="product clear">
-					<img src="images/template-image.jpg" class="product-image" alt="Product image">
-					<div class="product-content">
-						<h4>Product</h4>
-						<p>A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!</p>
-						<div class="price">
-							<p><strong>$10 CAD</strong></p>
-						</div>
-						<div class="buy-button">
-							<a href="" class="button buy-button">Buy</a>
-						</div>
-					</div>
-				</div>
+				<h4>Rendered element:</h4>				<div class="grid-row">
+					<div class="grid-col-2of3">						<div class="grid-col-1of2">							<img src="images/template-image.jpg" alt="Product image">						</div>						<div class="grid-col-1of2">
+							<h4>Product</h4>
+							<p>A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!</p>
+							<div>
+								<p><strong>$10 CAD</strong></p>
+							</div>
+							<div class="buy-button">
+								<a href="" class="button">Buy</a>
+							</div>						</div>
+					</div>				</div>
 			</section>
 			<section>
 				<h3>Website grid structure</h3>
 				<h4>CSS selector:</h4>
-				<p>.background, .main-nav, .nav-home, .button, .main-grid, .main-text, .bottom-section</p>
+				<p>.background, .main-nav, .nav-home, .button, .grid-row, .grid-col-2of3, .bottom-section</p>
 				<h4>Sample code:</h4>
 				<code>
 					&lt;div class="background"&gt;<br>
@@ -205,15 +190,14 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;News&lt;/a&gt;<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Store&lt;/a&gt;<br>
 					&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;section class="main-grid"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Section header&lt;/h1&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="main-text"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;section class="grid-row"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="grid-col-2of3"&gt;<br>					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Section header&lt;/h1&gt;<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Content header&lt;/h2&gt;<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Main content here!&lt;/p&gt;<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
 					&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
 					&nbsp;&nbsp;&nbsp;&lt;div class="bottom-section"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href=""&gt;About&lt;/a&gt; | &lt;a href=""&gt;FAQ&lt;/a&gt; | &lt;a href=""&gt;Support&lt;/a&gt;&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href=""&gt;About Us&lt;/a&gt; | &lt;a href=""&gt;Support&lt;/a&gt;&lt;/p&gt;<br>
 					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
 					&lt;/div&gt;
 				</code>
@@ -225,15 +209,14 @@
 						<a href="" class="button">News</a>
 						<a href="" class="button">Store</a>
 					</nav>
-					<section class="main-grid">
-						<h1>Section header</h1>
-						<section class="main-text">
-							<h2>Content header</h2>
-							<p>Main content here!</p>
+					<section class="grid-row">						<section class="grid-col-2of3">
+							<h1>Section header</h1>							<div class="content">
+								<h2>Content header</h2>
+								<p>Main content here!</p>							</div>
 						</section>
 					</section>
 					<div class="bottom-section">
-						<p><a href="">About Us</a> | <a href="">FAQ</a> | <a href="">Support</a></p>
+						<p><a href="">About Us</a> | <a href="">Support</a></p>
 					</div>
 				</div>
 			</section>
