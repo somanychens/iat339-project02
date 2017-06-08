@@ -1,278 +1,275 @@
 <!DOCTYPE html>
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>P02: Style Guide</title>
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-	</head>
-	<body>
-		<nav class="main-nav">
-			<a href="index.html" class="button">Wireframes</a>
-			<a href="sitemap.html" class="button">Sitemap</a>
-			<a href="citations.html" class="button">Citations</a>
-		</nav>
-		<h1>P02: Style Guide</h1>
-		<nav>
-			<a href="#interactive_elements" class="button">Interactive Elements</a>
-			<a href="#text_styling" class="button">Text Styling</a>
-			<a href="#combined_elements" class="button">Combined Elements</a>
-		</nav>
-		<section id="interactive_elements">
-			<h2>Interactive Elements</h2>
-			<section>
-				<h3>In-text link</h3>
-				<h4>CSS selector:</h4>
-				<p>a</p>
-				<h4>Sample code:</h4>
-				<code>&lt;p&gt;Here is an example of an &lt;a href=""&gt;in-text link&lt;/a&gt; to nowhere.&lt;/p&gt;</code>
-				<h4>Rendered element:</h4>
-				<p>Here is an example of an <a href="">in-text link</a> to nowhere.</p>
-			</section>
-			<section>
-				<h3>Navigation button</h3>
-				<h4>CSS selector:</h4>
-				<p>.nav-button</p>
-				<h4>Sample code:</h4>
-				<code>&lt;a href="" class="button"&gt;Navigation button&lt;/a&gt;</code>
-				<h4>Rendered element:</h4>
-				<a href="" class="button">Navigation button</a>
-			</section>
-			<section>
-				<h3>Submit and reset button</h3>
-				<h4>CSS selector:</h4>
-				<p>.form-button</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;button type="submit" value="Submit" class="form-button"&gt;Submit&lt;/button&gt;<br>
-					&lt;button type="reset" value="Reset" class="form-button"&gt;Reset&lt;/button&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<button type="submit" value="Submit" class="form-button">Submit</button>
-				<button type="reset" value="Reset" class="form-button">Reset</button>
-			</section>
-			<section>
-				<h3>Text input field and label</h3>
-				<h4>CSS selector:</h4>
-				<p>.form-text</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;form&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;p&gt;Search bar:&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;input type="text" name="searchbar" class="form-text"&gt;<br>
-					&lt;/form&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<form>
-					<p>Search bar:</p>
-					<input type="text" name="searchbar" class="form-text">
-				</form>
-			</section>
-		</section>
-		<section id="text_styling">
-			<h2>Text Styling</h2>
-			<section>
-				<h3>Levels of headings</h3>
-				<h4>CSS selector:</h4>
-				<p>h1, h2, h3, h4</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;h1&gt;Header 1&lt;/h1&gt;<br>
-					&lt;h2&gt;Header 2&lt;/h2&gt;<br>
-					&lt;h3&gt;Header 3&lt;/h3&gt;<br>
-					&lt;h4&gt;Header 4&lt;/h4&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<h1>Header 1</h1>
-				<h2>Header 2</h2>
-				<h3>Header 3</h3>
-				<h4>Header 4</h4>
-			</section>
-			<section>
-				<h3>Paragraph</h3>
-				<h4>CSS selector:</h4>
-				<p>p</p>
-				<h4>Sample code:</h4>
-				<code>&lt;p&gt;Here is an example of a paragraph element.&lt;/p&gt;</code>
-				<h4>Rendered element:</h4>
-				<p>Here is an example of a paragraph element.</p>
-			</section>
-			<section>
-				<h3>Bulletted list</h3>
-				<h4>CSS selector:</h4>
-				<p>ul, li</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;ul&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 1&lt;/li&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 2&lt;/li&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 3&lt;/li&gt;<br>
-					&lt;/ul&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<ul>
-					<li>List item 1</li>
-					<li>List item 2</li>
-					<li>List item 3</li>
-				</ul>
-			</section>
-			<section>
-				<h3>Numbered list</h3>
-				<h4>CSS selector:</h4>
-				<p>ol, li</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;ol&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 1&lt;/li&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 2&lt;/li&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 3&lt;/li&gt;<br>
-					&lt;/ol&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<ol>
-					<li>List item 1</li>
-					<li>List item 2</li>
-					<li>List item 3</li>
-				</ol>
-			</section>
-		</section>
-		<section id="combined_elements">
-			<h2>Combined Elements</h2>
-			<section>
-				<h3>Main navigation</h3>
-				<h4>CSS selector:</h4>
-				<p>.main-nav, .nav-home, .nav-button</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;nav class="main-nav"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;a href="" class="nav-home"&gt;Home&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Game&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;News&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Store&lt;/a&gt;<br>
-					&lt;/nav&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<nav class="main-nav">
-					<a href="" class="nav-home">Home</a>
-					<a href="" class="button">Game</a>
-					<a href="" class="button">News</a>
-					<a href="" class="button">Store</a>
-				</nav>
-			</section>
-			<section>
-				<h3>Product listing</h3>
-				<h4>CSS selector:</h4>
-				<p>.product, .clear, .product-image, .product-content, .price, .buy-button</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;div class="product clear"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;img src="images/template-image.jpg" class="product-image" alt="Product image"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;div class="product-content"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Product&lt;/h4&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;$10 CAD&lt;/strong&gt;&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="buy-button"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button buy-button"&gt;Buy&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&lt;/div&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<div class="product clear">
-					<img src="images/template-image.jpg" class="product-image" alt="Product image">
-					<div class="product-content">
-						<h4>Product</h4>
-						<p>A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!</p>
-						<div class="price">
-							<p><strong>$10 CAD</strong></p>
-						</div>
-						<div class="buy-button">
-							<a href="" class="button buy-button">Buy</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<h3>Website grid structure</h3>
-				<h4>CSS selector:</h4>
-				<p>.background, .main-nav, .nav-home, .button, .main-grid, .main-text, .bottom-section</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;div class="background"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;nav class="main-nav"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="nav-home"&gt;Home&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Game&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;News&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Store&lt;/a&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;section class="main-grid"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Section header&lt;/h1&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="main-text"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Content header&lt;/h2&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Main content here!&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;div class="bottom-section"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href=""&gt;About&lt;/a&gt; | &lt;a href=""&gt;FAQ&lt;/a&gt; | &lt;a href=""&gt;Support&lt;/a&gt;&lt;/p&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-					&lt;/div&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<div class="background">
-					<nav class="main-nav">
-						<a href="" class="nav-home">Home</a>
-						<a href="" class="button">Game</a>
-						<a href="" class="button">News</a>
-						<a href="" class="button">Store</a>
-					</nav>
-					<section class="main-grid">
-						<h1>Section header</h1>
-						<section class="main-text">
-							<h2>Content header</h2>
-							<p>Main content here!</p>
-						</section>
-					</section>
-					<div class="bottom-section">
-						<p><a href="">About</a> | <a href="">FAQ</a> | <a href="">Support</a></p>
-					</div>
-				</div>
-			</section>
-			<section>
-				<h3>Website colour swatches</h3>
-				<h4>CSS selector:</h4>
-				<p>.swatch, .swatch1, .swatch2, .swatch3, .swatch4</p>
-				<h4>Sample code:</h4>
-				<code>
-					&lt;div class="swatch swatch1"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;#f08700&lt;/p&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;div class="swatch swatch2"&gt;<br>
-					&nbsp;&nbsp;&lt;p&gt;#efca08&lt;/p&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;div class="swatch swatch3"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;p&gt;#aaaaaa&lt;/p&gt;<br>
-					&lt;/div&gt;<br>
-					&lt;div class="swatch swatch4"&gt;<br>
-					&nbsp;&nbsp;&nbsp;&lt;p&gt;#eeeeee&lt;/p&gt;<br>
-					&lt;/div&gt;
-				</code>
-				<h4>Rendered element:</h4>
-				<div class="swatch swatch1">
-					<p>#f08700</p>
-				</div>
-				<div class="swatch swatch2">
-					<p>#efca08</p>
-				</div>
-				<div class="swatch swatch3">
-					<p>#aaaaaa</p>
-				</div>
-				<div class="swatch swatch4">
-					<p>#eeeeee</p>
-				</div>
-			</section>
-		</section>
-	</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>P02: Style Guide</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/fonts.css">
+	</head>
+	<body>
+		<nav class="main-nav">
+			<a href="sitemap.html" class="button" target="_blank">Sitemap</a>			<a href="https://github.com/somanychens/iat339-project02" target="_blank"" class="button">Git Repository</a>
+		</nav>
+		<h1>P02: Style Guide</h1>
+		<nav>
+			<a href="#interactive_elements" class="button">Interactive Elements</a>
+			<a href="#text_styling" class="button">Text Styling</a>
+			<a href="#combined_elements" class="button">Combined Elements</a>
+		</nav>
+		<section id="interactive_elements">
+			<h2>Interactive Elements</h2>
+			<section>
+				<h3>In-text link</h3>
+				<h4>CSS selector:</h4>
+				<p>a</p>
+				<h4>Sample code:</h4>
+				<code>&lt;p&gt;Here is an example of an &lt;a href=""&gt;in-text link&lt;/a&gt; to nowhere.&lt;/p&gt;</code>
+				<h4>Rendered element:</h4>
+				<p>Here is an example of an <a href="">in-text link</a> to nowhere.</p>
+			</section>
+			<section>
+				<h3>Navigation button</h3>
+				<h4>CSS selector:</h4>
+				<p>.nav-button</p>
+				<h4>Sample code:</h4>
+				<code>&lt;a href="" class="button"&gt;Navigation button&lt;/a&gt;</code>
+				<h4>Rendered element:</h4>
+				<a href="" class="button">Navigation button</a>
+			</section>
+			<section>
+				<h3>Submit and reset button</h3>
+				<h4>CSS selector:</h4>
+				<p>.form-button</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;button type="submit" value="Submit" class="form-button"&gt;Submit&lt;/button&gt;<br>
+					&lt;button type="reset" value="Reset" class="form-button"&gt;Reset&lt;/button&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<button type="submit" value="Submit" class="form-button">Submit</button>
+				<button type="reset" value="Reset" class="form-button">Reset</button>
+			</section>
+			<section>
+				<h3>Text input field and label</h3>
+				<h4>CSS selector:</h4>
+				<p>.form-text</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;form&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;p&gt;Search bar:&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;input type="text" name="searchbar" class="form-text"&gt;<br>
+					&lt;/form&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<form>
+					<p>Search bar:</p>
+					<input type="text" name="searchbar" class="form-text">
+				</form>
+			</section>
+		</section>
+		<section id="text_styling">
+			<h2>Text Styling</h2>
+			<section>
+				<h3>Levels of headings</h3>
+				<h4>CSS selector:</h4>
+				<p>h1, h2, h3, h4</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;h1&gt;Header 1&lt;/h1&gt;<br>
+					&lt;h2&gt;Header 2&lt;/h2&gt;<br>
+					&lt;h3&gt;Header 3&lt;/h3&gt;<br>
+					&lt;h4&gt;Header 4&lt;/h4&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<h1>Header 1</h1>
+				<h2>Header 2</h2>
+				<h3>Header 3</h3>
+				<h4>Header 4</h4>
+			</section>
+			<section>
+				<h3>Paragraph</h3>
+				<h4>CSS selector:</h4>
+				<p>p</p>
+				<h4>Sample code:</h4>
+				<code>&lt;p&gt;Here is an example of a paragraph element.&lt;/p&gt;</code>
+				<h4>Rendered element:</h4>
+				<p>Here is an example of a paragraph element.</p>
+			</section>
+			<section>
+				<h3>Bulletted list</h3>
+				<h4>CSS selector:</h4>
+				<p>ul, li</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;ul&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 1&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 2&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 3&lt;/li&gt;<br>
+					&lt;/ul&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<ul>
+					<li>List item 1</li>
+					<li>List item 2</li>
+					<li>List item 3</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Numbered list</h3>
+				<h4>CSS selector:</h4>
+				<p>ol, li</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;ol&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 1&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 2&lt;/li&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;li&gt;List item 3&lt;/li&gt;<br>
+					&lt;/ol&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<ol>
+					<li>List item 1</li>
+					<li>List item 2</li>
+					<li>List item 3</li>
+				</ol>
+			</section>
+		</section>
+		<section id="combined_elements">
+			<h2>Combined Elements</h2>
+			<section>
+				<h3>Main navigation</h3>
+				<h4>CSS selector:</h4>
+				<p>.main-nav, .nav-home, .nav-button</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;nav class="main-nav"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;a href="" class="nav-home"&gt;Home&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Game&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;News&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Store&lt;/a&gt;<br>
+					&lt;/nav&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<nav class="main-nav">
+					<a href="" class=nav-home">Home</a>
+					<a href="" class="button">Game</a>
+					<a href="" class="button">News</a>
+					<a href="" class="button">Store</a>
+				</nav>
+			</section>
+			<section>
+				<h3>Product listing</h3>
+				<h4>CSS selector:</h4>
+				<p>.product, .clear, .product-image, .product-content, .price, .buy-button</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;div class="product clear"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;img src="images/template-image.jpg" class="product-image" alt="Product image"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;div class="product-content"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Product&lt;/h4&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;$10 CAD&lt;/strong&gt;&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="buy-button"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button buy-button"&gt;Buy&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+					&lt;/div&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<div class="product clear">
+					<img src="images/template-image.jpg" class="product-image" alt="Product image">
+					<div class="product-content">
+						<h4>Product</h4>
+						<p>A paragraph describing what this product is. Here are some details about the product, such as what material it comes in. Here is a feature or highlight about the product that will make you want to buy it. Comes in multiple sizes!</p>
+						<div class="price">
+							<p><strong>$10 CAD</strong></p>
+						</div>
+						<div class="buy-button">
+							<a href="" class="button buy-button">Buy</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h3>Website grid structure</h3>
+				<h4>CSS selector:</h4>
+				<p>.background, .main-nav, .nav-home, .button, .main-grid, .main-text, .bottom-section</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;div class="background"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;nav class="main-nav"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="nav-home"&gt;Home&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Game&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;News&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="" class="button"&gt;Store&lt;/a&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;section class="main-grid"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Section header&lt;/h1&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section class="main-text"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Content header&lt;/h2&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Main content here!&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;div class="bottom-section"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href=""&gt;About&lt;/a&gt; | &lt;a href=""&gt;FAQ&lt;/a&gt; | &lt;a href=""&gt;Support&lt;/a&gt;&lt;/p&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+					&lt;/div&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<div class="background">
+					<nav class="main-nav">
+						<a href="" class="nav-home">Home</a>
+						<a href="" class="button">Game</a>
+						<a href="" class="button">News</a>
+						<a href="" class="button">Store</a>
+					</nav>
+					<section class="main-grid">
+						<h1>Section header</h1>
+						<section class="main-text">
+							<h2>Content header</h2>
+							<p>Main content here!</p>
+						</section>
+					</section>
+					<div class="bottom-section">
+						<p><a href="">About Us</a> | <a href="">FAQ</a> | <a href="">Support</a></p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h3>Website colour swatches</h3>
+				<h4>CSS selector:</h4>
+				<p>.swatch, .swatch1, .swatch2, .swatch3, .swatch4</p>
+				<h4>Sample code:</h4>
+				<code>
+					&lt;div class="swatch swatch1"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;#f08700&lt;/p&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="swatch swatch2"&gt;<br>
+					&nbsp;&nbsp;&lt;p&gt;#efca08&lt;/p&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="swatch swatch3"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;p&gt;#aaaaaa&lt;/p&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;div class="swatch swatch4"&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;p&gt;#eeeeee&lt;/p&gt;<br>
+					&lt;/div&gt;
+				</code>
+				<h4>Rendered element:</h4>
+				<div class="swatch swatch1">
+					<p>#f08700</p>
+				</div>
+				<div class="swatch swatch2">
+					<p>#efca08</p>
+				</div>
+				<div class="swatch swatch3">
+					<p>#aaaaaa</p>
+				</div>
+				<div class="swatch swatch4">
+					<p>#eeeeee</p>
+				</div>
+			</section>
+		</section>
+	</body>
 </html>
