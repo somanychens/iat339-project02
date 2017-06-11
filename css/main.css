@@ -82,6 +82,11 @@ li {
 	background-color:#f08700;
 }
 
+.main-text {
+	background-color:#f4f4f4;
+	padding-bottom:1rem;
+}
+
 .nav-home {
 	position:absolute;
 	top:0.75rem;
