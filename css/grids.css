@@ -8,6 +8,11 @@
 	padding:0;
 }
 
+.main-grid {
+	padding-bottom:3rem;
+}
+
+
 .grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
 	width:100%;
 }
