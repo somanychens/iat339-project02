@@ -35,6 +35,10 @@
 	margin:auto;
 }
 
+.float-left {
+	float:left;
+}
+
 @media (min-width: 48.75em) {
 	.grid-col-1of2 {
 		width:50%;

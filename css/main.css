@@ -161,11 +161,6 @@ li {
 .cart-listing p {
 	padding:0.5rem 1rem;
 }
-.cart-total {
-	display:block;
-	padding-top:0.5rem;
-	border-top:1px solid #aaaaaa;
-}
 .cart-col-left {
 	display:inline-block;
 }
@@ -194,6 +189,12 @@ li {
 .single-button-centered {
 	text-align:center;
 	margin-bottom:2rem;
+}
+
+.page-break {
+	display:block;
+	padding-top:0.5rem;
+	border-top:1px solid #aaaaaa;
 }
 
 .background {
