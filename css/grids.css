@@ -26,6 +26,9 @@
 	display:block;
 	clear:both;
 }
+.header-image::after {
+	height:1rem;
+}
 
 .grid-col-1of4 > .nav-main-item {
 	width:100%;
@@ -52,6 +55,12 @@
 	.grid-col-1of4 {
 		width:50%;
 	}
+	.header-image-main {
+		height:15rem;
+	}
+	.header-image-sub {
+		height:10rem;
+	}
 }
 
 
@@ -64,6 +73,12 @@
 	}
 	.grid-col-1of4 {
 		width:25%;
+	}
+	.header-image-main {
+		height:20rem;
+	}
+	.header-image-sub {
+		height:10rem;
 	}
 }
 
