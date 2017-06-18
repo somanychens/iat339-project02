@@ -98,8 +98,9 @@ li {
 }
 
 .header-image-main, .header-image-sub {
-	width:100%;
-	background-color:black;
+	/*width:100%;
+	background-color:black;*/
+	background-image: url("images/header-main-test-2.png");
 }
 
 .button {

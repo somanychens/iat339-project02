@@ -26,9 +26,6 @@
 	display:block;
 	clear:both;
 }
-.header-image::after {
-	height:1rem;
-}
 
 .grid-col-1of4 > .nav-main-item {
 	width:100%;
