@@ -102,8 +102,7 @@ li {
 	padding:0px;
 	background-image: url("images/template-image.png");
 	background-color:black;
-	width:900px;
-	height:600px;
+	width:auto;
 }
 
 .button {
