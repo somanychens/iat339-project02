@@ -10,16 +10,22 @@
 	</head>
 	<body>
 		<nav class="main-nav">
-			<a href="index.html" class="nav-home">Home</a>
-			<a href="game.html" class="button">Game</a>
-			<a href="news.html" class="button">News</a>
-			<a href="store.html" class="button">Store</a>
+			<div class="grid-col-1of3 nav-left">
+				<a href="index.html" class="button">Home</a>
+			</div>
+			<div class="grid-col-1of3 nav-middle">
+				<a href="game.html" class="button">Game</a>
+				<a href="news.html" class="button">News</a>
+				<a href="store.html" class="button">Store</a>
+			</div>
+			<div class="grid-col-1of3 nav-right">
+			</div>
 		</nav>
 		<section class="grid-col-2of3 centered">
 			<h1>Checkout</h1>
 			<div class="grid-row content">
 				<h4>Confirmation</h4>
-				<div class="grid-col-2of3">
+				<div class="grid-col-2of3 content">
 					<h4>Billing Address</h4>
 					<form>
 						<div class="grid-row">
@@ -75,7 +81,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="grid-col-2of3">
+				<div class="grid-col-2of3 content">
 					<h4>Payment Details</h4>
 					<form>
 						<div class="grid-row">
@@ -104,7 +110,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="grid-col-2of3">
+				<div class="grid-col-2of3 content">
 					<h4>Cart</h4>
 					<div class="cart-listing">
 						<div class="cart-col-left"><p>Product</p></div>
@@ -119,9 +125,13 @@
 						<div class="cart-col-right"><p>$15</p></div>
 					</div>
 				</div>
-				<div class="corner-button">
-					<a href="checkout-4.html" class="form-button">Continue</a>
-					<a href="checkout-2.html" class="form-button">Back</a>
+				<div class="grid-row grid-col-2of3">
+					<div class="corner-button-right">
+						<a href="checkout-4.html" class="form-button">Continue</a>
+					</div>
+					<div class="corner-button-left">
+						<a href="checkout-2.html" class="form-button">Back</a>
+					</div>
 				</div>
 			</div>
 			<div class="single-button-centered">
