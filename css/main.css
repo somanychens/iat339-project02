@@ -125,10 +125,10 @@ li {
 	color:white;
 	background-color:#f08700;
 	border:none;
-	transition:background-color 0.5s;
+	transition:color 0.5s;
 }
 .form-button:hover, .form-button:focus {
-	background-color:#efca08;
+	color:#efca08;
 }
 
 .form-text {
