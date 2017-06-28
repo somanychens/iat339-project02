@@ -179,6 +179,10 @@ li {
 	width:100%;
 }
 
+.checkout-grid-left {
+	width:66.666%;
+}
+
 .multi-listing-text a, .multi-listing-text p {
 	display:block;
 	font-size:1.25rem;
