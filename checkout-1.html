@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<title>Checkout - Summary</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/fonts.css">
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<nav class="main-nav">
@@ -19,46 +20,64 @@
 				<a href="store.html" class="button">Store</a>
 			</div>
 			<div class="grid-col-1of3 nav-right">
+				<p class="button" id="cart-button" onClick="toggleCart()">Cart</p>
 			</div>
 		</nav>
-		<section class="grid-col-2of3 centered">
-			<h1>Checkout</h1>
-			<div class="grid-row content">
+		<div id="cart-box">
+			<div class="cart-listing">
+				<div class="cart-col-left"><p>T-Shirt</p></div>
+				<div class="cart-col-right"><p>$20</p></div>
+			</div>
+			<div class="cart-listing">
+				<div class="cart-col-left"><p>Tote Bag</p></div>
+				<div class="cart-col-right"><p>$10</p></div>
+			</div>
+			<div class="page-break">
+				<div class="cart-col-left"><p>Total</p></div>
+				<div class="cart-col-right"><p>$30</p></div>
+			</div>
+			<a href="checkout-1.html" class="form-button cart-checkout">Checkout</a>
+		</div>
+		<div class="background">
+			<section class="grid-col-2of3 centered">
+				<h1>Checkout</h1>
 				<div class="grid-row content">
-					<h4>Summary</h4>
-					<div class="grid-col-2of3 float-left">
-						<div class="cart-listing">
-							<div class="cart-col-left"><p>T-Shirt</p></div>
-							<div class="cart-col-right"><p>$20</p></div>
+					<div class="grid-row content">
+						<h4>Summary</h4>
+						<div class="grid-col-2of3 float-left">
+							<div class="cart-listing">
+								<div class="cart-col-left"><p>T-Shirt</p></div>
+								<div class="cart-col-right"><p>$20</p></div>
+							</div>
+							<div class="cart-listing">
+								<div class="cart-col-left"><p>Tote Bag</p></div>
+								<div class="cart-col-right"><p>$10</p></div>
+							</div>
+							<div class="page-break">
+								<div class="cart-col-left"><p>Total</p></div>
+								<div class="cart-col-right"><p>$30</p></div>
+							</div>
 						</div>
-						<div class="cart-listing">
-							<div class="cart-col-left"><p>Tote Bag</p></div>
-							<div class="cart-col-right"><p>$10</p></div>
+						<div class="grid-col-1of3">
+							<div class="cart-listing">
+								<p><a href="">Remove from Cart</a></p>
+							</div>
+							<div class="cart-listing">
+								<p><a href="">Remove from Cart</a></p>
+							</div>
 						</div>
-						<div class="page-break">
-							<div class="cart-col-left"><p>Total</p></div>
-							<div class="cart-col-right"><p>$30</p></div>
+					</div>		
+					<div class="grid-row grid-col-2of3">
+						<div class="corner-button-right">
+							<a href="checkout-2.html" class="form-button">Continue</a>
 						</div>
-					</div>
-					<div class="grid-col-1of3">
-						<div class="cart-listing">
-							<p><a href="">Remove from Cart</a></p>
-						</div>
-						<div class="cart-listing">
-							<p><a href="">Remove from Cart</a></p>
-						</div>
-					</div>
-				</div>		
-				<div class="grid-row grid-col-2of3">
-					<div class="corner-button-right">
-						<a href="checkout-2.html" class="form-button">Continue</a>
 					</div>
 				</div>
-			</div>
-			<div class="single-button-centered">
-				<a href="store.html" class="button">Back to Store</a>
-			</div>
-		</section>
+				<div class="single-button-centered">
+					<a href="store.html" class="button">Back to Store</a>
+				</div>
+			</section>
+		</div>
 		<section class="bottom-section">
 			<div class="grid-row">
 				<p><a href="about.html">About Us</a> | <a href="faq.html">FAQ</a> | <a href="citations.html">Citations</a></p>

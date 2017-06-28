@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<title>Checkout - Confirmation</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/fonts.css">
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<nav class="main-nav">
@@ -19,125 +20,143 @@
 				<a href="store.html" class="button">Store</a>
 			</div>
 			<div class="grid-col-1of3 nav-right">
+				<p class="button" id="cart-button" onClick="toggleCart()">Cart</p>
 			</div>
 		</nav>
-		<section class="grid-col-2of3 centered">
-			<h1>Checkout</h1>
-			<div class="grid-row content">
-				<h4>Confirmation</h4>
-				<div class="grid-col-2of3 content">
-					<h4>Billing Address</h4>
-					<form>
-						<div class="grid-row">
-							<div class="field">
-								<p>First Name: </p>
-								<input type="text" value="John" disabled>
-							</div>
-							<div class="field">
-								<p>Last Name: </p>
-								<input type="text" value="Doe" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>Email Address: </p>
-								<input type="text" value="jdoe@gmail.com" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>Address: </p>
-								<input type="text" value="12345 Place Name" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>City: </p>
-								<input type="text" value="Surrey" disabled>
-							</div>
-							<div class="field">
-								<p>State/Province: </p>
-								<input type="text" value="British Columbia" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>Zip/Postal Code: </p>
-								<input type="text" value="123 456" disabled>
-							</div>
-							<div class="field">
-								<p>Country: </p>
-								<input type="text" value="Canada" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>Telephone: </p>
-								<input type="text" value="000-123-4567" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<p><input type="checkbox" checked disabled> Ship to this address</p>
-						</div>
-					</form>
-				</div>
-				<div class="grid-col-2of3 content">
-					<h4>Payment Details</h4>
-					<form>
-						<div class="grid-row">
-							<div class="field">
-								<p>Card Type: </p>
-								<input type="text" value="Visa" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>Card Number: </p>
-								<input type="text" value="1234123412341324" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>CVN: </p>
-								<input type="text" value="123" disabled>
-							</div>
-						</div>
-						<div class="grid-row">
-							<div class="field">
-								<p>Expiration Date: </p>
-								<input type="text" value="01" disabled><input type="text" value="20" disabled>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="grid-col-2of3 content">
-					<h4>Cart</h4>
-					<div class="cart-listing">
-						<div class="cart-col-left"><p>T-Shirt</p></div>
-						<div class="cart-col-right"><p>$20</p></div>
-					</div>
-					<div class="cart-listing">
-						<div class="cart-col-left"><p>Tote Bag</p></div>
-						<div class="cart-col-right"><p>$10</p></div>
-					</div>
-					<div class="page-break">
-						<div class="cart-col-left"><p>Total</p></div>
-						<div class="cart-col-right"><p>$30</p></div>
-					</div>
-				</div>
-				<div class="grid-row grid-col-2of3">
-					<div class="corner-button-right">
-						<a href="checkout-4.html" class="form-button">Continue</a>
-					</div>
-					<div class="corner-button-left">
-						<a href="checkout-2.html" class="form-button">Back</a>
-					</div>
-				</div>
+		<div id="cart-box">
+			<div class="cart-listing">
+				<div class="cart-col-left"><p>T-Shirt</p></div>
+				<div class="cart-col-right"><p>$20</p></div>
 			</div>
-			<div class="single-button-centered">
-				<a href="store.html" class="button">Back to Store</a>
+			<div class="cart-listing">
+				<div class="cart-col-left"><p>Tote Bag</p></div>
+				<div class="cart-col-right"><p>$10</p></div>
 			</div>
-		</section>
+			<div class="page-break">
+				<div class="cart-col-left"><p>Total</p></div>
+				<div class="cart-col-right"><p>$30</p></div>
+			</div>
+			<a href="checkout-1.html" class="form-button cart-checkout">Checkout</a>
+		</div>
+		<div class="background">
+			<section class="grid-col-2of3 centered">
+				<h1>Checkout</h1>
+				<div class="grid-row content">
+					<h4>Confirmation</h4>
+					<div class="grid-col-2of3 content">
+						<h4>Billing Address</h4>
+						<form>
+							<div class="grid-row">
+								<div class="field">
+									<p>First Name: </p>
+									<input type="text" value="John" disabled>
+								</div>
+								<div class="field">
+									<p>Last Name: </p>
+									<input type="text" value="Doe" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>Email Address: </p>
+									<input type="text" value="jdoe@gmail.com" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>Address: </p>
+									<input type="text" value="12345 Place Name" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>City: </p>
+									<input type="text" value="Surrey" disabled>
+								</div>
+								<div class="field">
+									<p>State/Province: </p>
+									<input type="text" value="British Columbia" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>Zip/Postal Code: </p>
+									<input type="text" value="123 456" disabled>
+								</div>
+								<div class="field">
+									<p>Country: </p>
+									<input type="text" value="Canada" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>Telephone: </p>
+									<input type="text" value="000-123-4567" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<p><input type="checkbox" checked disabled> Ship to this address</p>
+							</div>
+						</form>
+					</div>
+					<div class="grid-col-2of3 content">
+						<h4>Payment Details</h4>
+						<form>
+							<div class="grid-row">
+								<div class="field">
+									<p>Card Type: </p>
+									<input type="text" value="Visa" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>Card Number: </p>
+									<input type="text" value="1234123412341324" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>CVN: </p>
+									<input type="text" value="123" disabled>
+								</div>
+							</div>
+							<div class="grid-row">
+								<div class="field">
+									<p>Expiration Date: </p>
+									<input type="text" value="01" disabled><input type="text" value="20" disabled>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="grid-col-2of3 content">
+						<h4>Cart</h4>
+						<div class="cart-listing">
+							<div class="cart-col-left"><p>T-Shirt</p></div>
+							<div class="cart-col-right"><p>$20</p></div>
+						</div>
+						<div class="cart-listing">
+							<div class="cart-col-left"><p>Tote Bag</p></div>
+							<div class="cart-col-right"><p>$10</p></div>
+						</div>
+						<div class="page-break">
+							<div class="cart-col-left"><p>Total</p></div>
+							<div class="cart-col-right"><p>$30</p></div>
+						</div>
+					</div>
+					<div class="grid-row grid-col-2of3">
+						<div class="corner-button-right">
+							<a href="checkout-4.html" class="form-button">Continue</a>
+						</div>
+						<div class="corner-button-left">
+							<a href="checkout-2.html" class="form-button">Back</a>
+						</div>
+					</div>
+				</div>
+				<div class="single-button-centered">
+					<a href="store.html" class="button">Back to Store</a>
+				</div>
+			</section>
+		</div>
 		<section class="bottom-section">
 			<div class="grid-row">
 				<p><a href="about.html">About Us</a> | <a href="faq.html">FAQ</a> | <a href="citations.html">Citations</a></p>

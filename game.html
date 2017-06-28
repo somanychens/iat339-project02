@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<title>Game</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/fonts.css">
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<nav class="main-nav">
@@ -19,64 +20,79 @@
 				<a href="store.html" class="button">Store</a>
 			</div>
 			<div class="grid-col-1of3 nav-right">
+				<p class="button" id="cart-button" onClick="toggleCart()">Cart</p>
 			</div>
 		</nav>
-		<section class="grid-col-2of3 centered">
-			<div class="grid-row">
-				<h2>Firewatch is a single-player first-person mystery set in the Wyoming wilderness.</h2>
-				<h4>The year is 1989.</h4>
-
-<p>You are a man named Henry who has retreated from your messy life to work as a fire lookout in the Wyoming wilderness. Perched atop a mountain, it's your job to find smoke and keep the wilderness safe.</p>
-
-<p>An especially hot, dry summer has everyone on edge. Your supervisor, a woman named Delilah, is available to you at all times over a small, handheld radio—and is your only contact with the world you've left behind.</p>
-
-<p>But when something strange draws you out of your lookout tower and into the world below, you'll explore a wild and unknown environment, facing questions and making interpersonal choices that can build or destroy the only meaningful relationship you have.</p>
+		<div id="cart-box">
+			<div class="cart-listing">
+				<div class="cart-col-left"><p>T-Shirt</p></div>
+				<div class="cart-col-right"><p>$20</p></div>
 			</div>
-		</section>
-		<section class="grid-row">
-			<div class="grid-col-1of3">
-				<img src="images/screenshot-image-1.png" alt="Screenshot of game">
+			<div class="cart-listing">
+				<div class="cart-col-left"><p>Tote Bag</p></div>
+				<div class="cart-col-right"><p>$10</p></div>
 			</div>
-			<div class="grid-col-1of3">
-				<img src="images/screenshot-image-2.png" alt="Screenshot of game">
+			<div class="page-break">
+				<div class="cart-col-left"><p>Total</p></div>
+				<div class="cart-col-right"><p>$30</p></div>
 			</div>
-			<div class="grid-col-1of3">
-				<img src="images/screenshot-image-3.png" alt="Screenshot of game">
-			</div>
-		</section>
-		<section class="grid-col-2of3 centered">
-		<div class="grid-row">
-			<h3>Includes:</h3>
-			<ul>
-				<li>A stunningly beautiful wilderness environment that expands as you explore.</li>
-				<li>A tailor-made story: the choices you make shape the narrative and build relationships.</li>
-				<li>An edge-of-your-seat mystery.</li>
-				<li>Secrets and discoveries to be made over every hill.</li>
-			</ul>
-			<h3>Featuring</h3>
-			<ul>
-				<li>Living, breathing characters brought to life by Cissy Jones (The Walking Dead: Season 1) and Rich Sommer (Mad Men)</li>
-				<li>A spectacular wilderness environment by Olly Moss (Illustrator) and Jane Ng (The Cave, Brutal Legend)</li>
-				<li>A thrilling story and script by Sean Vanaman and Jake Rodkin (The Walking Dead: Season 1, Poker Night at the Inventory)</li>
-				<li>A stirring original soundtrack by Chris Remo (Gone Home)</li>
-				<li>Fluid first-person animation by James Benson (Ori & The Blind Forest)</li>
-				<li>Gameplay scripting and design work by Patrick Ewing (Twitter) and Nels Anderson (Mark of the Ninja)</li>
-				<li>Programming by Will Armstrong (Bioshock II), Ben Burbank (Costume Quest 2, Space Base DF-9), and Paolo Surricchio (Deadpool, Call of Duty Advanced Warfare)</li>
-			</ul>
+			<a href="checkout-1.html" class="form-button cart-checkout">Checkout</a>
 		</div>
-			<h1>Reviews</h1>
-			<div class="grid-row content">
-				<h4>IGN</h4>
-				<p>"Firewatch, then – on the strength of its gripping story, brilliant branching script, wholly convincing voice-acting performances, and stunning art direction – is easily one of my favorite and most memorable game experiences of this decade." - <a href="http://ca.ign.com/articles/2016/02/08/firewatch-review">IGN</a></p>
-				<h4>Metacritic</h4>
-				<p><a href="http://www.metacritic.com/game/pc/firewatch">81% on Metacritic</a></p>
+		<div class="background">
+			<section class="grid-col-2of3 centered">
+				<div class="grid-row">
+					<h2>Firewatch is a single-player first-person mystery set in the Wyoming wilderness.</h2>
+					<h4>The year is 1989.</h4>
+					<p>You are a man named Henry who has retreated from your messy life to work as a fire lookout in the Wyoming wilderness. Perched atop a mountain, it's your job to find smoke and keep the wilderness safe.</p>
+					<p>An especially hot, dry summer has everyone on edge. Your supervisor, a woman named Delilah, is available to you at all times over a small, handheld radio—and is your only contact with the world you've left behind.</p>
+					<p>But when something strange draws you out of your lookout tower and into the world below, you'll explore a wild and unknown environment, facing questions and making interpersonal choices that can build or destroy the only meaningful relationship you have.</p>
+				</div>
+			</section>
+			<section class="grid-row">
+				<div class="grid-col-1of3">
+					<img src="images/screenshot-image-1.png" alt="Screenshot of game">
+				</div>
+				<div class="grid-col-1of3">
+					<img src="images/screenshot-image-2.png" alt="Screenshot of game">
+				</div>
+				<div class="grid-col-1of3">
+					<img src="images/screenshot-image-3.png" alt="Screenshot of game">
+				</div>
+			</section>
+			<section class="grid-col-2of3 centered">
+			<div class="grid-row">
+				<h3>Includes:</h3>
+				<ul>
+					<li>A stunningly beautiful wilderness environment that expands as you explore.</li>
+					<li>A tailor-made story: the choices you make shape the narrative and build relationships.</li>
+					<li>An edge-of-your-seat mystery.</li>
+					<li>Secrets and discoveries to be made over every hill.</li>
+				</ul>
+				<h3>Featuring</h3>
+				<ul>
+					<li>Living, breathing characters brought to life by Cissy Jones (The Walking Dead: Season 1) and Rich Sommer (Mad Men)</li>
+					<li>A spectacular wilderness environment by Olly Moss (Illustrator) and Jane Ng (The Cave, Brutal Legend)</li>
+					<li>A thrilling story and script by Sean Vanaman and Jake Rodkin (The Walking Dead: Season 1, Poker Night at the Inventory)</li>
+					<li>A stirring original soundtrack by Chris Remo (Gone Home)</li>
+					<li>Fluid first-person animation by James Benson (Ori & The Blind Forest)</li>
+					<li>Gameplay scripting and design work by Patrick Ewing (Twitter) and Nels Anderson (Mark of the Ninja)</li>
+					<li>Programming by Will Armstrong (Bioshock II), Ben Burbank (Costume Quest 2, Space Base DF-9), and Paolo Surricchio (Deadpool, Call of Duty Advanced Warfare)</li>
+				</ul>
 			</div>
-		</section>
-		<section class="grid-row">
-			<div class="single-button-centered">
-				<a href="single-product.html" class="button">Buy the Game!</a>
-			</div>
-		</section>
+				<h1>Reviews</h1>
+				<div class="grid-row content">
+					<h4>IGN</h4>
+					<p>"Firewatch, then – on the strength of its gripping story, brilliant branching script, wholly convincing voice-acting performances, and stunning art direction – is easily one of my favorite and most memorable game experiences of this decade." - <a href="http://ca.ign.com/articles/2016/02/08/firewatch-review">IGN</a></p>
+					<h4>Metacritic</h4>
+					<p><a href="http://www.metacritic.com/game/pc/firewatch">81% on Metacritic</a></p>
+				</div>
+			</section>
+			<section class="grid-row">
+				<div class="single-button-centered centered">
+					<a href="single-product.html" class="button">Buy the Game!</a>
+				</div>
+			</section>
+		</div>
 		<section class="bottom-section">
 			<div class="grid-row">
 				<p><a href="about.html">About Us</a> | <a href="faq.html">FAQ</a> | <a href="citations.html">Citations</a></p>
