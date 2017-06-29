@@ -172,6 +172,28 @@ li {
 	padding:0.25rem 1rem 0.5rem 1rem;
 }
 
+.step-box {
+	margin-bottom:1rem;
+}
+
+.checkout-step-incomplete {
+	background-color:#aaaaaa;
+}
+
+.checkout-step-current {
+	background-color:#efca08;
+	color:#f08700;
+}
+
+.checkout-step-complete {
+	background-color:#efca08;
+	color:white;
+}
+
+.checkout-step-complete:hover, .checkout-step-complete:focus {
+	color:#f08700;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;

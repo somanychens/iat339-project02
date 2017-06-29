@@ -39,6 +39,11 @@
 	float:left;
 }
 
+.step-col-1of4, .step-col-2of4, .step-col-3of4, .step-col-4of4 {
+	display:inline-block;
+	width:24.555%;
+}
+
 @media (min-width: 48.75em) {
 	.grid-col-1of4 {
 		width:50%;
