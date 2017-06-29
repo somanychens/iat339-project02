@@ -36,7 +36,7 @@ h4 {
 }
 
 img {
-	width:100%;
+	max-width:100%;
 }
 
 nav {
@@ -137,6 +137,9 @@ li {
 	margin:0.5rem 1rem;
 }
 
+.banner {
+	width:100%;
+}
 #cart-button:hover, #cart-button:focus {
 	color:#efca08;
 	cursor:pointer;
