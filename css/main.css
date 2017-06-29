@@ -254,6 +254,10 @@ li {
 	background-color:white;
 }
 
+.article-body {
+	padding:0 1rem 0 1rem;
+}
+
 .article-img {
 	padding-bottom:1rem;
 }
