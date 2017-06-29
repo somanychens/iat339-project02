@@ -78,25 +78,16 @@ li {
 }
 
 .main-nav {
-	display:flex;
 	width:100%;
 	margin:0;
 	padding:0;
 }
 
-.nav-left {
-	background-color:#f08700;
-	text-align:left;
-}
-
-.nav-middle {
+.nav-left, .nav-middle, .nav-right {
+	float:none;
+	margin-bottom:1rem;
 	background-color:#f08700;
 	text-align:center;
-}
-
-.nav-right {
-	background-color:#f08700;
-	text-align:right;
 }
 
 .header-image-main, .header-image-sub {
@@ -317,14 +308,19 @@ li {
 	.button {
 		padding:0.75rem;
 	}
+	.nav-left, .nav-middle, .nav-right {
+		float:left;
+	}
 	.nav-left {
 		width:20%;
+		text-align:left;
 	}
 	.nav-middle {
 		width:60%;
 	}
 	.nav-right {
 		width:20%;
+		text-align:right;
 	}
 }
 

@@ -16,7 +16,7 @@
 	width:100%;
 }
 
-.grid-col-1of2, .grid-col-1of4, .grid-col-2of4, .grid-col-1of3 {
+.grid-col-1of2, .grid-col-1of4, .grid-col-2of4 {
 	float:left;
 }
 
