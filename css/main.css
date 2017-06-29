@@ -85,7 +85,6 @@ li {
 
 .nav-left, .nav-middle, .nav-right {
 	float:none;
-	margin-bottom:1rem;
 	background-color:#f08700;
 	text-align:center;
 }
@@ -233,6 +232,7 @@ li {
 .background {
 	margin:0;
 	padding:0;
+	padding-top:1rem;
 	background-color:#eeeeee;
 }
 
@@ -255,6 +255,7 @@ li {
 
 .about-img {
 	width:75%;
+	margin-top:1rem;
 	margin-left:1rem;
 }
 
@@ -305,6 +306,9 @@ li {
 }
 
 @media (min-width: 48.75em) {
+	.background {
+		padding-top:4rem;
+	}
 	.button {
 		padding:0.75rem;
 	}
